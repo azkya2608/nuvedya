@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NuVedya</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-image: url("../images//cloves.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        -webkit-animation: slidein 10s;
+        animation: slidein 10s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;
+      }
+
+      @-webkit-keyframes slidein {
+        from {
+          background-position: top;
+          background-size: 500px;
+        }
+        to {
+          background-position: -100px 0px;
+          background-size: 375px;
+        }
+      }
+
+      @keyframes slidein {
+        from {
+          background-position: top;
+          background-size: 500px;
+        }
+        to {
+          background-position: -100px 0px;
+          background-size: 375px;
+        }
+      }
+
+      .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        color: rgb(134, 71, 71);
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(254, 233, 210, 0.3);
+        border-radius: 3px;
+      }
+      .center h1 {
+        text-align: center;
+        font-family: "Source Code Pro", monospace;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <h1>Cloves</h1>
+      <p>
+        Cloves contain a strong anaesthetic known as eugenol which similarly
+        works as an antiseptic to fight bacteria that may cause infections.<br />
+        That is why cloves are so effective at fighting cavities and are often
+        added to oral products such as toothpaste and mouthwash.
+      </p>
+    </div>
+  </body>
+</html>

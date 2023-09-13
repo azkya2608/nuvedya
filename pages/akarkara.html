@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NuVedya</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      .wrapper {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fee9d2;
+      }
+
+      image {
+        width: 500px;
+        position: relative;
+      }
+
+      img {
+        width: 100%;
+        display: block;
+        margin: auto;
+      }
+
+      .content {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 0;
+        transition: 0.6s;
+      }
+
+      .content:hover {
+        opacity: 1;
+      }
+
+      .content h1 {
+        font-size: 45px;
+        color: #fff;
+        margin: 15px;
+      }
+
+      .content p {
+        font-size: 19px;
+        color: white;
+      }
+
+      .content > * {
+        transform: translateY(25px);
+        transition: transform 0.6s;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="image">
+        <img src="../images/akarkara.png" alt="" />
+        <div class="content">
+          <h1>Akarkara</h1>
+          <p>
+            Akarkara helps to reduce toothache when its powder form is rubbed on
+            the gums and teeth. <br />
+            According to Ayurveda, the mouth acts as the seat of Kapha dosha and
+            an imbalance in Kapha dosha might lead to several dental problems
+            like toothache.<br />
+            Akarkara helps to manage toothache due to its Kapha balancing
+            nature.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
